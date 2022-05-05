@@ -1,0 +1,80 @@
+<section class="vegetables_upper ">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.shopify.com/s/files/1/0551/4133/5088/files/organic-slide2_2048x_ef4c510c-1a3d-4ff3-9816-c5651bdf7f06.jpg?v=1641273168" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-xl font-bold">Fresh Fruits and Vegetables</h5>
+              <h5 class="text-2xl md:6xl font-bold">Best Quality</h5>
+              <p>We’re not your average fruit importers. We have expertise in sourcing the choicest of fresh fruits from around the world and distributing it across the length and breadth of India.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.shopify.com/s/files/1/0551/4133/5088/files/group-fresh-vegetables-fruits.jpg?v=1638359433" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-xl font-bold">Fresh Fruits and Vegetables</h5>
+                <h5 class="text-6xl font-bold">Best Quality</h5>
+                <p>We’re not your average fruit importers. We have expertise in sourcing the choicest of fresh fruits from around the world and distributing it across the length and breadth of India.</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.shopify.com/s/files/1/0551/4133/5088/files/slide1_697474fe-6fda-43eb-8de2-884623aefd27.png?v=1641273085" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-xl font-bold">Fresh Fruits and Vegetables</h5>
+                <h5 class="text-6xl font-bold">Best Quality</h5>
+                <p>We’re not your average fruit importers. We have expertise in sourcing the choicest of fresh fruits from around the world and distributing it across the length and breadth of India.</p>
+              
+             
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<section class="tools_products container mx-auto">
+    <h1 class="font-bold text-3xl italic text-green-500 mt-10 ">OUR PRODUCTS</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <%vegetables.forEach(function(vegetable){%>
+        <div class="product  mt-5 w-full md:w-64 ">
+            <div class="container mx-auto items-center">
+                <img class="mx-auto" src="<%= vegetable.image%>" alt="">
+            </div>
+            <div class="name font-bold text-center">
+                <h1 class="text-xl"><%= vegetable.name%></h1>
+            </div>
+            <div class="mt-2">
+                <h1 class="font-bold inline">Price : <%= vegetable.price%></h1>
+                <span class="font-bold ml-14">QTY : <%= vegetable.quantity%></span>
+            </div>
+            <div>
+                <button data-tool = "<%= JSON.stringify(vegetable)%>" class="add-to-cart btn w-60 mt-3">Add to cart</button>
+            </div>
+        </div>
+        <%})%>
+    </div>
+    
+    
+</section>
+
+
+
+
+<section class="vegetables_second mt-10 italic">
+    <h1 class="font-bold text-4xl">Fresh Fruits Online & Fresh Vegetables Online</h1>
+    <p class="mt-5 text-xl">We’re not your average fruit importers. We have expertise in sourcing the choicest of fresh fruits from around the world and distributing it across the length and breadth of India. Our top-notch distribution network strengthened through almost a century of existence in the fruit business, works efficiently to ensure the fruits are delivered far and wide with an intriguing depth of freshness. We provide fresh fruits online and fresh vegetables online.</p>
+    <p class="text-xl mt-3">We have expertise in providing fresh fruits online and fresh vegetables online and offline and sourcing the choicest of fruits and vegetables from around the world</p>
+</section>

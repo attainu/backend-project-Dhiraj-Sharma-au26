@@ -1,0 +1,31 @@
+<section class="seeds_upper text-center">
+    <h1 class="text-4xl font-bold">SHOP DESI SEEDS</h1>
+    <div class="ml-10 text-xl mt-3">We are India's first farmer owned organic seed company! "Farm", an organic farmers collective, has spearheaded a movement for the promotion of ecological agriculture through the revival of indigenous seeds. In its journey, it has met and has been inspired by many local seed savers. These are people who had reproduced and handed down from generation to generation, seeds that had unmatched richness of flavor, nutritional benefit, and resistance to pest and diseases </div>
+    
+</section>
+
+<section class="tools_products container mx-auto">
+    <h1 class="font-bold text-3xl italic text-green-500 mt-10 ">OUR PRODUCTS</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <%seeds.forEach(function(seed){%>
+        <div class="product mt-5">
+            <div class="container mx-auto items-center">
+                <img class="mx-auto" src="<%= seed.image%>" alt="" style="height: 150px;width: 150px;">
+            </div>
+            <div class="name font-bold text-center">
+                <h1 class="text-xl"><%= seed.name%></h1>
+            </div>
+            <div class="mt-2">
+                <h1 class="font-bold inline">Price : <%= seed.price%></h1>
+                <span class="font-bold ml-14">QTY : <%= seed.quantity%></span>
+            </div>
+            <div>
+                <button data-tool = "<%= JSON.stringify(seed)%>" class="add-to-cart btn w-60 mt-3">Add to cart</button>
+            </div>
+        </div>
+        <%})%>
+    </div>
+    
+    
+</section>

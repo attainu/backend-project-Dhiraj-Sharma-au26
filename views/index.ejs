@@ -1,0 +1,67 @@
+
+<section class="Home_section_upper container text-center">
+    <img class="mx-auto" src="/images/home_logo.png" alt="">
+    <p class="text-xl md:text-4xl ">We are Online Market of organic fruits, vegetables, juices and dried fruits. Visit our site of a complete <br> list of exclusive we are stocking</p>
+
+</section>
+
+<section class="Home_section_second flex  my-10 text-center">
+    
+   
+    <div class="left mx-20 ">
+        <div>
+            <a href="/product/vegetables">
+                <img src="https://cdn.shopify.com/s/files/1/2005/7511/files/item-1-3_570x220_crop_center.jpg?v=1495067013" alt="">
+                <h6 class="text-xl md:text-2xl italic ">FRESH FRUITS</h6>
+            </a>
+        </div>
+    </div>
+    <div class="right mx-5">
+        <div>
+            <a href="/product/vegetables">
+                <img src="https://cdn.shopify.com/s/files/1/2005/7511/files/item-2-1_570x220_crop_center.jpg?v=1495067021" alt="">
+                <h6 class="text-xl md:text-2xl italic ">FRESH VEGETABLES</h6>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="Home_section_third container text-center">
+    <h1 class="text-4xl font-bold italic">NEW PRODUCTS</h1>
+    <p class="text-green-500">-featured products-</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <%newProducts.forEach(function(product){%>
+        <div class="product mt-5">
+            <div class="container mx-auto items-center">
+                <img class="mx-auto" src="<%= product.image%>" alt="" style="height: 150px; width: 150px;">
+            </div>
+            <div class="name font-bold text-center">
+                <h1 class="text-xl"><%= product.name%></h1>
+            </div>
+            <div class="mt-2">
+                <h1 class="font-bold inline">Price : <%= product.price%></h1>
+                <span class="font-bold ml-14">QTY : <%= product.quantity%></span>
+            </div>
+            <div>
+                <button data-tool = "<%= JSON.stringify(product)%>" class="add-to-cart btn w-60 mt-3">Add to cart</button>
+            </div>
+        </div>
+        <%})%>
+    </div>
+
+</section>
+
+
+<section class="Home_section_lower  mx-auto text-white mb-50">
+    <div class="contant">
+        <h1 class="home_main_txt font-bold text-green-300">REAL QUALITY</h1>
+        <h6 class="text-4xl">farm-grown products</h6>
+        <p class="text-xl">we can call ourselves the innovators in agricultural buisness.<br>And these are not just words. <br>They have solid background .you can find real proof reading about our compny.</p>
+        <div class="mt-5">
+            <button class="btn mx-5"><a href="login">LogIn</a></button>
+            <button class="btn mx-5"><a href="/aboutUs">About Us</a></button>
+        </div>
+    </div>
+</section>

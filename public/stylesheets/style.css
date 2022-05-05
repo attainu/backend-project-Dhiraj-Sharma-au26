@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 8px;
+  background: #4fca7e;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 4px 4px;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 0;
+  border-bottom: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.082);
+}
+
+#navbar ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#navbar ul li a:hover {
+  background-color: rgba(37, 33, 33, 0.521);
+  padding: 0px 6px;
+  border-radius: 8px;
+  color: #2dc019;
+}
+
+#navbar .logo_txt {
+  font-size: 2rem;
+}
+
+#navbar #logo {
+  font-family: 'Square Peg', cursive;
+}
+
+#navbar #logo img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.Home_section_upper {
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+}
+
+.Home_section_second {
+  background-color: #F8F8F8;
+}
+
+.Home_section_lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Home_section_lower .home_main_txt {
+  font-family: 'Square Peg', cursive;
+  font-size: 3rem;
+}
+
+.Home_section_lower::before {
+  background-image: url("http://occrocus4.themessoft.com/catalog/view/theme/crocus4/image/parralax-bg2.jpg");
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.login form {
+  background-color: rgba(37, 33, 33, 0.521);
+  color: white;
+}
+
+.login form::before {
+  margin-top: 3.6rem;
+  background-image: url("https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.homeProduct_upper {
+  height: 400px;
+  width: 500px;
+}
+
+.homeProduct_upper .homeProduct_box {
+  height: 350px;
+  width: 350px;
+  margin: 5px 5px;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+}
+
+.homeProduct_upper .homeProduct_box img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.homeProduct_upper .homeProduct_box button {
+  background-color: #4fca7e;
+}
+
+.homeProduct_second {
+  height: 150px;
+  width: 500;
+  margin-top: 5px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ddf7c5), color-stop(#ecefea), to(#ddf7c5));
+  background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+}
+
+.tools_upper::before {
+  background-color: white;
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.tools_upper .left, .tools_upper .right {
+  height: 350px;
+  width: 500px;
+  text-align: center;
+}
+
+.tools_upper .left img, .tools_upper .right img {
+  height: 350px;
+  width: 500px;
+}
+
+.tools_upper .left p, .tools_upper .right p {
+  font-family: 'Square Peg', cursive;
+  color: #2dc019;
+}
+
+.tools_products .product {
+  height: 310px;
+  width: 210px;
+}
+
+.tools_products .product img {
+  height: 150px;
+  width: 150px;
+}
+
+.tools_products .product .name {
+  border-top: 1px solid gray;
+  border-radius: 2px;
+}
+
+.vegetables_upper {
+  height: 500px;
+  width: 100%;
+}
+
+.vegetables_upper img {
+  height: 500px;
+  width: 100%;
+}
+
+.vegetables_second {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ddf7c5), color-stop(#ecefea), to(#ddf7c5));
+  background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+  text-align: center;
+}
+
+.seeds_upper {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ddf7c5), color-stop(#ecefea), to(#ddf7c5));
+  background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+  font-family: 'Crimson text', serif;
+}
+
+.cart .left {
+  margin-top: 3.72rem;
+  height: auto;
+  width: 900px;
+}
+
+.cart .left .element img {
+  height: 50px;
+  width: 50px;
+}
+
+.cart .left .cartForm {
+  border: 1px solid gray;
+  margin-top: 5rem;
+}
+
+.cart .right {
+  margin-top: 3.72rem;
+  height: 450px;
+  width: 350px;
+}
+
+.cart .right input {
+  border: 1px solid gray;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.cart .emptyCart {
+  margin-top: 3.72rem;
+}
+
+.cart .emptyCart img {
+  height: 300px;
+  width: 300px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer footer {
+  position: relative;
+  bottom: 0%;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.aboutUs_upper .contant::before {
+  background-image: url("https://cdn.shopify.com/s/files/1/2005/7511/files/bg-cate-head.png?v=1495074323");
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.aboutUs_second {
+  background-color: #F8F8F8;
+}
+
+.aboutUs_second .contant .feedback {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+.aboutUs_second .contant .customer img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.feedback_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ddf7c5), color-stop(#ecefea), to(#ddf7c5));
+  background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+}
+
+.feedback_form input {
+  width: 450px;
+}
+
+.contact_second .left {
+  height: 500px;
+  width: 675px;
+}
+
+.contact_second .right {
+  height: 500px;
+  width: 675px;
+  background-color: #F8F8F8;
+}
+
+.blog_upper .contant {
+  height: 300px;
+  width: 100%;
+}
+
+.blog_upper .contant::before {
+  margin-top: 3.72rem;
+  content: "";
+  background-image: url("http://st.ourhtmldemo.com/template/organic_store/images/home/slide-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.blog_second .left {
+  height: 500px;
+  width: 872px;
+}
+
+.blog_second .right {
+  margin-top: 50px;
+  height: 400px;
+  width: 300px;
+  background-color: rgba(255, 255, 0, 0.39);
+}
+
+.blog_third {
+  background-color: #F8F8F8;
+}
+
+.blog_fourth {
+  background-image: url("http://unicoder.themedirectors.com/template/unigreen/gardening/images/banner/bg.png");
+}
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

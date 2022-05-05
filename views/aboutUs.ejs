@@ -1,0 +1,64 @@
+<section class="aboutUs_upper">
+   
+   <div class="contant text-center container mt-10 mx-30">
+       <h1 class="font-bold text-4xl">OUR STORY</h1>
+       <h1 class="mx-auto text-2xl text-green-500 mt-2"> Discover our beautiful farm </h1>
+       <p class="mx-auto text-xl italic">We are Online Market of organic fruits, vegetables, ,<br>juices and dried fruits. <br> Organic farming supports eco-sustenance, <br>or farming in harmony with nature.</p>
+       <p class="mx-auto text-xl italic">Organic farming produces plant and animal foods without the excessive use of chemicals.<br> It focuses on using fertile soil along with a variety of crops to maintain healthy growing<br> conditions which produce a food with more <br> nutrients and less chemicals than typical commercial foods</p>
+        <h1 class="text-xl font-bold mt-5">Dhiraj Sharma</h1>
+        <p class="italic">/Director Farm</p>
+    </div>
+</section>
+<section class="aboutUs_second container mx-auto  mt-20">
+    <h1 class="text-3xl text-center mt-5">We love our customers !</h1>
+    
+    <div class="grid grid-cols-4 mt-10">
+        <%feedbacks.forEach(function(feedback){%>
+        <div class="contant container text-center mt-5">
+            <div class="feedback ">
+                <div>
+                    <span><img src="https://cdn.shopify.com/s/files/1/2005/7511/t/4/assets/client-quote.png?1149075251631633427" alt=""></span> 
+                    <span class="text-xl" style="font-family: 'Courgette', cursive;"><p> <%= feedback.comment%></p></span>
+                </div>
+                <div class="customer mt-4">
+                    <img class="mx-auto" src="<%= feedback.avtar%>" alt="">
+                </div>
+                <div>
+                    <h1 class="font-bold mt-1"><%= feedback.name%></h1>
+                    <h1 class="italic"><%= feedback.role%></h1>
+                </div>
+            
+            </div>
+            
+            
+        </div>
+        <%})%>
+    </div>
+</section>
+
+<section class="mt-10">
+    <div class="feedback_form container items-center">
+        <h1 class="text-4xl italic font-bold text-center">Give us a line !</h1>
+        <form action="/aboutUs" method="post" enctype="multipart/form-data">
+            <div class="mx-auto my-2">
+                <label class="font-bold" for="name">Name :</label>
+                <input type="text"  name="name">
+            </div>
+            <div class="font-bold" my-2">
+                <label for="role">Role _ :</label>
+                <input type="text" name="role">
+            </div>
+            <div class="font-bold my-2">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="" cols="55" rows="5"></textarea>
+            </div>
+            <div class="font-bold my-2">
+                <label for="avtar">Image:</label>
+                <input type="file" name="avtar">
+            </div>
+            <div class="text-center">
+                <button class="btn bg-green-500 my-2 w-100" type="submit"> submit</button>
+            </div>
+        </form>
+    </div>
+</section>

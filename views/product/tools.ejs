@@ -1,0 +1,51 @@
+<section class="tools_upper container mx-auto flex mt-4">
+    <div class="left mx-10">
+        <img src="https://cdn.shopify.com/s/files/1/0529/6524/5102/files/b3_480x480_127a9714-dfa6-49c2-8040-b4cfc59c05e4_540x.png?v=1631345975" alt="">
+    </div>
+    <div class="right mx-10">
+        <h1 class="text-3xl mt-4">Painting The Town With Framstool</h1>
+        <h1 class="font-bold italic text-2xl mt-3">Good Farming with FarmsTool!</h1>
+        <p class="mt-2 text-xl font-bold">At FarmsTool, we aim to bring back to you the delight of growing your own corner full of greenery and bright coloured flowers. FarmsTool- The name justifies itself that we deal with providing tools that can be the best practice for your farming/gardening skills.</p>
+        <h1 class="font-bold italic text-2xl mt-3">Every Plant has a Story</h1>
+        <p class="mt-2 text-xl font-bold">Our goal is to offer the simplest tools and products to motivate our customers to measure a more convenient and safer way of life, and to offer a relaxed gardening life. Our every product and tool are exclusively developed.</p>
+    </div>
+</section>
+<section class="tools_upper container mx-auto flex mt-16">
+    
+    <div class="right mx-10">
+        
+        <h1 class="font-bold italic text-2xl mt-3">#1 BestSelling Self-watering Planter Ceramic Flowerpots</h1>
+        <p class="mt-2 text-xl font-bold">At FarmsTool, we aim to bring back to you the delight of growing your own corner full of greenery and bright coloured flowers. FarmsTool- The name justifies itself that we deal with providing tools that can be the best practice for your farming/gardening skills.</p>
+        <h1 class="font-bold italic text-2xl mt-3">COMPLETELY REUSABLE</h1>
+        <p class="mt-2 text-xl font-bold">The Best part about this planter is that it's completely reusable as it's made from natural material.</p>
+    </div>
+    <div class="left mx-10">
+        <img src="https://cdn.shopify.com/s/files/1/0529/6524/5102/files/pic2_720x.png?v=1636456709" alt="">
+    </div>
+</section>
+
+<section class="tools_products container mx-auto">
+    <h1 class="font-bold text-3xl italic text-green-500 mt-10 ">OUR PRODUCTS</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <%tools.forEach(function(tool){%>
+        <div class="product mt-5">
+            <div class="container mx-auto items-center">
+                <img class="mx-auto" src="<%= tool.image%>" alt="">
+            </div>
+            <div class="name font-bold text-center">
+                <h1 class="text-xl"><%= tool.name%></h1>
+            </div>
+            <div class="mt-2">
+                <h1 class="font-bold inline">Price : <%= tool.price%></h1>
+                <span class="font-bold ml-14">QTY : <%= tool.quantity%></span>
+            </div>
+            <div>
+                <button data-tool = "<%= JSON.stringify(tool)%>" class="add-to-cart btn w-60 mt-3">Add to cart</button>
+            </div>
+        </div>
+        <%})%>
+    </div>
+    
+    
+</section>

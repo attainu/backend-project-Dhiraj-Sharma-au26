@@ -1,0 +1,451 @@
+@import './variable';
+
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    
+    
+}
+.btn{
+    display: inline-block;
+    padding: 5px 8px;
+    background: $btn_color;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        padding: 4px 4px;
+    }
+    
+}
+
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    flex-wrap:wrap;
+    top : 0;
+    border-bottom: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.082);
+
+    // &::before{
+    //     // background-image: url('https://images.unsplash.com/photo-1589922585618-dfd1fcd87c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    //     content: "";
+    //     background-size: cover;
+    //     width: 100%;
+    //     height: 100vh;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: -1;
+    //     opacity: 0.8;
+    // }
+
+    
+    
+    & ul {
+        flex-wrap: wrap;
+    }
+
+    & ul li a:hover{
+        background-color: $background;
+        padding: 0px 6px;
+        border-radius: 8px;
+        color: $text_green;
+
+    }
+    
+
+    & .logo_txt{
+        font-size: 2rem;
+    }
+    #logo{
+        font-family: 'Square Peg', cursive;
+        
+    }
+
+    #logo img{
+        border-radius: 50%;
+
+        height: 50px;
+        width: 50px;
+    }
+
+    
+
+}
+
+.Home_section_upper{
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+}
+.Home_section_second{
+    background-color: $secondary;
+}
+
+
+.Home_section_lower{
+    
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    height: 400px;
+    justify-content: center;
+     
+
+    
+    & .home_main_txt{
+        font-family: 'Square Peg', cursive;
+        font-size: 3rem;
+    }
+    &::before{
+        background-image: url('http://occrocus4.themessoft.com/catalog/view/theme/crocus4/image/parralax-bg2.jpg');
+        content: "";
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.9;
+        
+    }
+    
+}
+
+.login form{
+    background-color: $background;
+    color: white;
+
+    &::before{
+        margin-top: 3.6rem;
+        background-image: url('https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+        content: "";
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 1;
+    }
+    
+}
+
+.homeProduct_upper{
+    
+    height: 400px;
+    width: 500px;
+
+    & .homeProduct_box{
+        
+        height: 350px;
+        width: 350px;
+        margin: 5px 5px;
+        background-color: $secondary;
+        border-radius: 15px;
+
+        & img{
+
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        & button{
+            background-color: $btn_color;
+        }
+    }
+}
+
+.homeProduct_second{
+    
+    height: 150px;
+    width: 500;
+    margin-top: 5px;
+    text-align: center;
+    
+    background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+}
+
+
+.tools_upper{
+    &::before{
+        background-color: white;
+        content: "";
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 1;
+    }
+    & .left, .right{
+        // background-color: white;
+        // border: 2px solid red;
+        height: 350px;
+        width: 500px;
+        text-align: center;
+
+        & img{
+            height: 350px;
+            width: 500px;
+        }
+        & p{
+            font-family: 'Square Peg', cursive;
+            color: $text_green;
+        }
+    }
+}
+
+
+
+
+.tools_products{
+
+    & .product{
+        
+        height: 310px;
+        width: 210px;
+        
+
+        & img{
+            height: 150px;
+            width: 150px;
+            
+            
+        }
+    & .name{
+        border-top: 1px solid gray;
+        border-radius: 2px;
+    }
+    }
+}
+
+.vegetables_upper{
+    
+    height: 500px;
+    width: 100%;
+
+    & img{
+        height: 500px;
+        width: 100%;
+    }
+}
+.vegetables_second{
+    background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+    text-align: center;
+}
+
+
+.seeds_upper{
+    
+    background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+    font-family: 'Crimson text', serif;
+}
+
+
+.cart{
+    
+    & .left{
+        margin-top: 3.72rem;
+        // border-right: 2px solid red;
+        height: auto;
+        width: 900px;
+
+        & .element{
+            & img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+        & .cartForm{
+            border: 1px solid gray;
+            margin-top: 5rem;
+        }
+    }
+    & .right{
+        margin-top: 3.72rem;
+        // border: 1px solid gray;
+        height: 450px;
+        width: 350px;
+        // background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+
+        & input {
+            border: 1px solid gray;
+            width: 300px;
+            border-radius: 5px;
+        }
+        
+    }
+    & .emptyCart{
+        
+        margin-top: 3.72rem;
+        & img{
+            height: 300px;
+            width: 300px;
+        }
+        
+    }
+    
+}
+
+.footer{
+    width: 100%;
+    & footer{
+        position: relative;
+        bottom: 0%;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+
+///about us
+.aboutUs_upper{
+    & .contant{
+        &::before{
+            background-image: url('https://cdn.shopify.com/s/files/1/2005/7511/files/bg-cate-head.png?v=1495074323');
+            content: "";
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 1;
+        }
+
+    }
+
+   
+    
+}
+
+.aboutUs_second{
+    background-color: $secondary;
+
+    & .contant{
+        
+
+        & .feedback{
+            background-color: white;
+            
+            height: 300px;
+            width: 300px;
+        }
+
+        & .customer{
+            & img{
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+
+.feedback_form{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #ddf7c5, #ecefea, #ddf7c5);
+     & input{
+         width: 450px;
+     }
+}
+
+
+.contact_second{
+
+    & .left{
+        
+        height: 500px;
+        width: 675px;
+    }
+    & .right{
+        
+        height: 500px;
+        width: 675px;
+        background-color: $secondary;
+    }
+}
+
+
+
+.blog_upper{
+    
+
+    & .contant{
+        height: 300px;
+        width: 100%;
+        &::before{
+            margin-top: 3.72rem;
+           content: "";
+            background-image: url('http://st.ourhtmldemo.com/template/organic_store/images/home/slide-1.jpg');
+            
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 1;
+        }
+    }
+
+}
+
+.blog_second{
+    & .left{
+        
+        height: 500px;
+        width: 872px;
+    }
+    & .right{
+        margin-top: 50px;
+        
+        height: 400px;
+        width: 300px;
+        background-color: rgba(255, 255, 0, 0.39);
+    }
+}
+
+.blog_third{
+    background-color: $secondary;
+    
+    
+}
+
+.blog_fourth{
+    background-image: url('http://unicoder.themedirectors.com/template/unigreen/gardening/images/banner/bg.png');
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1060px){
+    .container{
+        max-width: 90%;
+    }
+}

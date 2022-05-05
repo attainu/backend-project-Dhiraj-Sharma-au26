@@ -1,0 +1,54 @@
+<section class="blog_upper text-center">
+    <h1 class="font-bold text-4xl text-white italic">Farm</h1>
+    <div class="contant text-center container">
+        
+        <h1 class="text-xl text-white">BRIGHT NATURE OF DECISION</h1>
+        <img class="mx-auto" src="http://st.ourhtmldemo.com/template/organic_store/images/home/1.png" alt="">
+        <h1></h1>
+    </div>
+</section>
+
+<section class="blog_second container flex">
+    <div class="left">
+        <embed src="https://www.youtube.com/embed/watch?v=LjCzPp-MK48&list=RDLVmcixldqDIEQ&index=1" type="" style="height: 500px;width: 872px;">
+    </div>
+    <div class="right text-center">
+        <h1 class="text-3xl font-bold">About Blog</h1>
+        <p class="text-xl italic mt-4">As part of Microfinancing Project, SIF aims to improve income of farmer women who are in distress because of family situation and lack of financial support. The implementation of project started in March 2020 with partner organization Manaswini/ Manavlok. </p>
+    </div>
+</section>
+
+
+<section class="blog_third container mt-5">
+    
+    <div class="grid grid-cols-2">
+        <%blogs.forEach(function(blog){%>
+        <div class="contant my-3 mx-3 bg-white">
+            <img style="width: 100%;height: 500px;" src=<%= blog.image%> alt="">
+            <h1 class="font-bold text-3xl italic mt-2"><%= blog.heading%></h1>
+            <p class="text-xl mt-2"><%= blog.contant%></p>
+            <div class="container flex mt-2 bg-white" style="border-top: 1px solid rgba(177, 175, 175, 0.829) ;">
+                <img src="<%= blog.imageAuthor%>" alt="" style="border-radius: 50%;height: 50px;width: 50px;">
+                <div>
+                    <h1 class="my-auto font-bold"><%= blog.nameAuthor%></h1>
+                    <p>Farmer</p>
+                </div>
+                <h1 class="mx-auto text-xl italic">5-sept-2021</h1>
+            </div>
+        </div>
+        <%})%>
+    </div>
+</section>
+
+<section class="blog_fourth container text-center text-white mt-5">
+    <h1 class="font-bold text-3xl italic">SUMMARY</h1>
+    <p class="text-lg italic">The ground-breaking research took 11 years to complete and is the longest study announcement comes <br> at a time where half of British adults have tooth decay while one in four children will start school with decay in their baby teeth.
+
+        Despite many positive changes to the <br>landscape of oral health, there is still more work to be done. Twice-daily brushing, an excess of sugar in our food and drink and access to basic dental services,<br> all remain difficult challenges.
+        
+        Manufacturing industry became <br>a key sector of production and labour in European and North American countries during the Industrial Revolution, upsetting previous mercantile and feudal economies.<br> The Industrial Revolution, which took place from the 18th to 19th centuries.</p>
+
+    <h1 class="text-2xl italic my-5" style="background-color: rgba(195, 228, 247, 0.37);border-radius: 5px;">" I don't know why we are here, but I'm pretty sure that it is not in order to enjoy ourselves<br>Despite many positive changes to the landscape of oral health, there is still more work to be done."</h1>   
+    
+    <p class="text-lg italic">vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</p>
+</section>

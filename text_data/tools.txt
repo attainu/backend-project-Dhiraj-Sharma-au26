@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Sprayers",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_31_05_484Z.png",
+  "price": "1250",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Tarpaulin",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_24_44_601Z.png",
+  "price": "670",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Brush Cutter",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_31_24_923Z.png",
+  "price": "5200",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Power Weeder",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_31_51_202Z.png",
+  "price": "6500",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Power Tiller",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_32_07_199Z.png",
+  "price": "4350",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Power Reaper",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_32_24_622Z.png",
+  "price": "3240",
+  "quantity": "1"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": " Earth Auger",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_32_38_965Z.png",
+  "price": "600",
+  "quantity": "1"
+},{ 
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Mowers & Trimmers",
+  "image": "https://www.tractorjunction.com/blog/wp-content/uploads/2020/11/image_2020_11_12T09_32_51_431Z.png",
+  "price": "500",
+  "quantity": "1"
+}]
